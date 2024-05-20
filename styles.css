@@ -1,0 +1,431 @@
+:root{
+    --color-primario: #005F73;
+    --color-loginbtn: #3D879C;
+    --color-background-register: #02556A;
+
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color-opacity: #4B4B4B;
+
+}
+body{
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+/*       MAQUETADO----GRID     */
+
+.container{
+    min-width: 100%;
+    display: grid;
+    .header_nav{
+        grid-area: header;
+    }
+    .main{
+        grid-area: main;
+    }
+    .footercontent{
+        grid-area: footer1;
+    }
+    .footer2{
+        grid-area: footer2;
+    }
+    grid-template: 
+    "header header header" 0.5fr
+    "main main main" auto
+    "footer1 footer1 footer1" 1fr
+    "footer2 footer2 footer2" 0.1fr/
+    1fr 1fr 1fr
+    ;
+}
+
+/*       HEADER     */
+
+.header_nav{
+    color: white;
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px var(--color-primario);
+}
+
+.marca_container h1{
+    font-size: 2.5rem;
+    margin: 7px 0 0 0;
+    color: #ffffff;
+}
+
+.marca_container img{
+    max-width: 70px; 
+    margin: 5px 10px 40px 25px;
+}
+
+.marca_container a{
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_container{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40px; 
+}
+
+.nav_form {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 0 0;
+}
+
+.search_input {
+    width: 85%;
+    border-radius: 20px;
+    border: none;
+    padding: 7px;
+    position: relative;
+}
+
+.nav_container .search_input:focus{
+    outline: none;
+}
+
+.search_bar_container{
+    position: relative;
+}
+
+.nav_container .nav_form a{
+    color: var(--color-primario);
+    position: absolute;
+    right: 65px;
+    bottom: 1px;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.nav_container .search_input::placeholder{
+    color: var(--color-loginbtn);
+    position: absolute;
+    left: 15px;
+}
+
+.nav_list_container{
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.nav_list_container ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 5;
+}
+
+.nav_list_container ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.inicio_sesion_container{
+    padding: 20px 20px 20px 0;
+    min-width: 369px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 10px 40px 0px;
+}
+
+.inicio_sesion_container a {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+
+}
+
+.fa-solid.fa-user, .fa-solid.fa-bag-shopping{
+    font-size: 1.8rem;
+    margin-left: 20px;
+}
+
+/*       SLIDER----SERVICES     */
+
+.main.index .carousel_container{
+    position: relative;
+}
+
+.main.index .carousel_container img{
+    height: 95vh;
+}
+
+.main.index .carousel_container .overlay.img1 {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    width: 380px;
+    height: 380px;
+    background-image: url(./multimedia/harry-potter/harry-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+.main.index .carousel_container .overlay.img2 {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    width: 380px;
+    height: 350px;
+    background-image: url(./multimedia/star-wars/baby-yoda-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+.main.index .carousel_container .overlay.img3 {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 380px;
+    height: 380px;
+    background-image: url(./multimedia/pokemon/pikachu-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+  }
+
+.main.index .services{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    min-width: 100%;
+    text-align: center;
+    color: #4B4B4B;
+    opacity: 70%;
+}
+
+.main.index .services p{
+    font-size: 1.1rem;
+}
+
+.main.index .services header h2{
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.main.index .metodo_pago_container,.metodo_entrega_container{
+    padding: 80px 80px 80px 80px;
+}
+
+.main.index .metodo_pago_container i,.metodo_entrega_container i{
+    font-size: 6.5rem;
+    margin-bottom: 20px;
+}
+
+.main.index .metodo_entrega_container{
+    padding-left: 5px;
+}
+
+/*       FOOTERCONTENT----FOOTER2     */
+
+.footercontent {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(0.294, 0.294, 0.294, 0.4);
+    font-size: 1rem;
+    padding: 80px 80px 40px 80px;
+}
+
+.footercontent header h4{
+    font-weight: 670;
+    margin-bottom: 18px;
+}
+
+.footercontent .categorias, .contactos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 20%;
+}
+
+.footercontent .contactos{
+    display: flex;
+    margin-left: 40px;
+}
+
+.footercontent .categorias{
+    margin-left: 30px;
+}
+
+.footercontent .categorias ul, .contactos ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footercontent .contactos ul{
+    display: flex;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.footercontent .contactos ul li{
+    width: 18%;
+}
+
+.footercontent .categorias ul li{
+    margin-bottom: 15px;
+}
+
+.footercontent .categorias ul li a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+}
+.footercontent .contactos ul li a{
+    color: var(--color-opacity);
+    font-size: 30px;
+}
+
+.marca_footer_container h1{
+    font-size: 2.5rem;
+    margin: 7px 0 0 0;
+    color: var(--color-opacity);
+}
+
+.marca_footer_container img{
+    max-width: 70px; 
+    margin: 0px 10px 40px 25px;
+    color: var(--color-opacity);
+    opacity: 70%;
+}
+
+.marca_footer_container a{
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.marca_footer_container{
+    margin-left: auto;
+}
+
+.footer2{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(0.294, 0.294, 0.294, 0.4);
+    text-align: center;
+    width: 47%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer2 a{
+    color: #000000;
+}
+
+
+/*       LOGIN----REGISTER     */
+
+.container-log{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.container-log .mitad1 form{
+    width: 358px;
+    padding: auto;
+    margin: 0 20px;
+    height: 422px;
+}
+
+.container-log .mitad2{
+    width: 400px;
+    height: 484px;
+    padding: 50px;
+}
+
+.container-log fieldset{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.container-log .mitad1 input, label{
+    display: block;
+}
+
+.container-log .mitad1 label{
+    display: flex;
+    margin: 15px 0 5px 40px;
+}
+
+.mitad1{
+    border: 1px solid #000000;
+    border-radius: 10px 0 0 10px;
+}
+
+.mitad2{
+    float: right;
+    background-color: var(--color-background-register);
+    border-radius: 0 10px 10px 0;
+}
+
+div .mitad2 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 90px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.mitad1 input{
+    border: 1px solid black ;
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.mitad1 input:focus{
+    outline: none;
+}
+
+.mitad1 .loginbtn{
+    width: 40%;
+    margin-top: 60px;
+    margin: 60px auto;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background-color: var(--color-loginbtn);
+    border: none;
+}
+
+.mitad2 button{
+    width: 55%;
+    margin-top: 60px;
+    margin: 60px auto;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background-color: var(--color-background-register);
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
