@@ -38,8 +38,7 @@ body{
     "main main main" auto
     "footer1 footer1 footer1" 1fr
     "footer2 footer2 footer2" 0.1fr/
-    1fr 1fr 1fr
-    ;
+    1fr 1fr 1fr;
 }
 
 /*       HEADER     */
@@ -103,7 +102,7 @@ body{
 .nav_container .nav_form a{
     color: var(--color-primario);
     position: absolute;
-    right: 65px;
+    right: 50px;
     bottom: 1px;
     cursor: pointer;
     font-size: 1.6rem;
@@ -125,7 +124,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     padding: 5px;
-    margin: 5;
+    margin: 5px;
 }
 
 .nav_list_container ul li a{
@@ -242,7 +241,7 @@ body{
     padding: 80px 80px 40px 80px;
 }
 
-.footercontent header h4{
+.footercontent div h4{
     font-weight: 670;
     margin-bottom: 18px;
 }
