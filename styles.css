@@ -429,3 +429,51 @@ div .mitad2 h1{
     border: 1px solid #ffffff;
     border-radius: 8px;
 }
+
+/*.mitad3{
+
+}*/
+.mitad3 input{
+    border: 1px solid black ;
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.mitad3 input:focus{
+    outline: none;
+}
+
+.mitad3 .loginbtn{
+    width: 40%;
+    margin-top: 60px;
+    margin: 15px auto;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background-color: var(--color-loginbtn);
+    border: none;
+}
+
+.container-log .mitad3 input, label{
+    display: block;
+}
+
+.container-log .mitad3 label{
+    display: flex;
+    margin: -15px 0 3px 40px;
+}
+
+.mitad3{
+    border: 1px solid #000000;
+    border-radius: 10px 0 0 10px;
+}
+
+.container-log .mitad3 form{
+    width: 358px;
+    padding: auto;
+    margin: 0 5px;
+    height: 422px;
+}
