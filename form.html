@@ -50,33 +50,51 @@
 
       <main class="main form">
 
-        <form action="#" method="post" autocomplete="off">
-          <p>Si te arrepentiste de una compra podés pedir una devolución enviando este formulario.</p>
+        <div class="form_container">
 
-          <div class="form_group">
-            <label for="fname">Nombre</label>
-            <input type="text" id="fname" name="fname" placeholder="Noelia">
+          <div class="img_container">
+              <img src="./multimedia/img-form/img-form.webp" alt="Funko pop triste">
           </div>
 
-          <div class="form_group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="email@mail.com">
-          </div>
+          <form action="#" method="post" autocomplete="off">
+              <p>Si te arrepentiste de una compra podés pedir una devolución enviando este formulario.</p>
 
-          <div class="form_group">
-            <label for="tel">Teléfono</label>
-            <input type="text" id="tel" name="tel" placeholder="1123456789">
-          </div>
+              <div class="form_group">
+                  <label for="fname">Nombre</label>
+                  <input type="text" id="fname" name="fname" placeholder="Noelia">
+              </div>
 
-          <div class="form_group">
+              <div class="form_group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="email@mail.com">
+              </div>
 
-          </div>
+              <div class="form_group">
+                  <label for="tel">Teléfono</label>
+                  <input type="text" id="tel" name="tel" placeholder="1123456789">
+              </div>
 
-          <div class="form_group">
+              <div class="form_group">
+                  <label for="motivo">Motivo de la devolución:</label>
+                  <select id="motivo" name="motivo">
+                      <option value="">Seleccione un motivo</option>
+                      <option value="producto_danado">Producto dañado</option>
+                      <option value="producto_incorrecto">Producto incorrecto</option>
+                      <option value="cambio_opinion">Cambio de opinión</option>
+                      <option value="otro">Otro</option>
+                  </select>
+              </div>
 
-          </div>
+              <div class="form_group_checkbox">
+                  <input type="checkbox" id="terminos" name="terminos">
+                  <label for="terminos">Acepto los términos y condiciones</label>
+              </div>
 
-        </form>
+              <button class="formbtn" type="submit">Enviar</button>
+
+          </form>
+
+      </div>
 
       </main>
 

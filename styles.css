@@ -48,7 +48,7 @@ body{
     background-color: var(--color-primario);
     display: flex;
     justify-content: space-between;
-    box-shadow: 1px 1px 2px var(--color-primario);
+    box-shadow: 0.5px 0.5px 0.5px var(--color-primario);
 }
 
 .marca_container h1{
@@ -480,4 +480,73 @@ div .mitad2 h1{
     padding: auto;
     margin: 0 5px;
     height: 422px;
+}
+
+/*       Form     */
+
+.main.form .form_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.main.form .img_container {
+    flex: 0 0 30%;
+    margin-right: 15px;
+}
+
+.main.form .img_container img{
+    max-width: 100%;
+}
+
+.main.form form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main.form p{
+    max-width: 61ch;
+}
+
+.form_group label, 
+.form_group_checkbox label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form_group input{
+    border: 1px solid black ;
+    width: 60%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.main.form .form_group input:focus{
+    outline: none;
+}
+
+.form_group, .form_group_checkbox, .formbtn {
+    margin-bottom: 15px;
+}
+
+.formbtn{
+    width: 60%;
+    margin-top: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: var(--color-background-register);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.form_group_checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.form_group_checkbox input{
+    margin-right: 10px;
 }
