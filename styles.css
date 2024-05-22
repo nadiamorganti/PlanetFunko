@@ -3,7 +3,8 @@
     --color-loginbtn: #3D879C;
     --color-background-register: #02556A;
 
-    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -22,6 +23,7 @@ body{
 .container{
     min-width: 100%;
     display: grid;
+
     .header_nav{
         grid-area: header;
     }
@@ -345,7 +347,7 @@ body{
 
 .container-log .mitad1 form{
     width: 358px;
-    padding: auto;
+    padding: 0px;
     margin: 0 20px;
     height: 422px;
 }
@@ -478,7 +480,7 @@ div .mitad2 h1{
 
 .container-log .mitad3 form{
     width: 358px;
-    padding: auto;
+    padding: 0px;
     margin: 0 5px;
     height: 422px;
 }
