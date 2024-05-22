@@ -20,7 +20,5 @@ function validar() {
         return false;
     }
 
-    // Puedes agregar más validaciones según tus requerimientos
-
     return true;
 }
