@@ -641,3 +641,41 @@ div .mitad2 h1{
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+/* NOSOTROS*/
+
+.contenedor{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 80px 0;
+	max-width: 1200px;
+}
+
+.about{
+	min-height: 400px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap:80px;
+	justify-items:center;
+	align-items: center;
+}
+
+.about_img{
+	text-align: center;
+}
+
+.about_img--left{
+	text-align: left;
+}
+
+.about__picture{
+	max-width: 80%;
+}
+
+.about__paragraph{
+	margin-bottom: 20px;
+	line-height: 1.5;
+	font-weight: 300;
+}

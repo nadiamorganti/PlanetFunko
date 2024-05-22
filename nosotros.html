@@ -11,7 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="validar.js"></script>
 
     
   </head>
@@ -50,39 +49,38 @@
 
       </header>
 
-      <main class="main">
+    <main class="main">
+        <section class="about contenedor">
 
-      <section class="container-log">
+			<div class="about__texts">
+				<h2 class="subtitle">Sobre Nosotros</h2>
+				<p class="about__paragraph">Somos una tienda online especializada en la venta de productos únicos y originales para aquellos que buscan expresar su personalidad a través de la moda y el estilo.</p>
+				<p class="about__paragraph">En PlanetFunko encontrarás una selección cuidadosamente curada de ropa, accesorios y decoración, siempre a la vanguardia de las últimas tendencias y con un toque de diversión y color.</p>
+				</div>
 
-        <div class="mitad3">
-            <form action="" method="post" onsubmit="return validar()">
-                <fieldset>Registrarse</fieldset>
-                <label for="name">Nombre y Apellido</label>
-                <input type="text" id="nombre" name="name">
-                <label for="user">Email</label>
-                <input type="text" name="user" id="user">
-                <label for="password">Contraseña</label>
-                <input style="border-radius: 10px solid black;" type="password" name="password" id="password">
-                <label for="password">Confirmar contraseña</label>
-                <input style="border-radius: 10px solid black;" type="password" name="password" id="confirmar">
-                <input class="loginbtn" type="submit" value="Crear Cuenta">
-            </form>
-        </div>
-        <div class="mitad2">
-            <h1>¡Bienvenido!</h1>
-            <a href="./login.html">Iniciar sesión</a>
-        </div>
+				<figure class="about_img">
+					<img src="./multimedia/backgrounds/star-wars.jpg" alt="" class="about__picture">
+				</figure>
 
-      </section>
+				<figure class="about_img about_img--left">
+					<img src="./multimedia/backgrounds/harry-potter.jpg" alt="" class="about__picture">
+				</figure>
 
+				<div class="about__texts">
+				<h2 class="subtitle">Nuestro Trabajo</h2>
+				<p class="about__paragraph"> Nuestra misión es ofrecer a nuestros clientes una experiencia de compra única y emocionante, para que puedan disfrutar de productos exclusivos y de alta calidad que les permitan destacar y sentirse seguros de sí mismos.</p>
+				<p class="about__paragraph">¡Bienvenidos a nuestro mundo funko!</p>
+				</div>
+			
+		</section>
     </main>
 
       <footer class="footercontent" role="contentinfo">
 
         <div class="categorias">
-          <header>
+          <div>
             <h4>Categorías</h4>
-          </header>
+          </div>
           <ul>
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./products.html">Productos</a></li>
@@ -90,9 +88,9 @@
           </ul>
         </div>
         <div class="contactos">
-          <header>
+          <div>
             <h4>Contactános</h4>
-          </header>
+          </div>
           <ul>
             <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             <li> <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -108,7 +106,7 @@
       </footer>
 
       <div class="footer2">
-        <p>Defensa de las y los consumidores. Para reclamos <a href="">ingresa acá.</a> / <a href="">Botón de arrepentimiento</a></p>
+        <p>Defensa de las y los consumidores. Para reclamos <a href="https://autogestion.produccion.gob.ar/consumidores" target="_blank">ingresa acá.</a> / <a href="./form.html">botón de arrepentimiento</a></p>
       </div>
 
 </div>
