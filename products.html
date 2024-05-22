@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PlanetFunko</title>
+    
+    <link rel="icon" href="./multimedia/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+  </head>
+  <body>
+    <div class="container" style="padding: 0;">
+
+      <header class="header_nav">
+
+        <div class="marca_container">
+          <a href="./index.html" aria-label="Ir a la página principal">
+            <img src="/multimedia/branding/logoWhite.svg" alt="Logo PlanetFunko" />
+            <h1>PlanetFunko</h1>
+          </a>
+        </div>
+
+        <nav class="nav_container" role="navigation">
+            <div class="search_bar_container">
+              <form class="nav_form" role="search">
+                <input class="search_input"  type="search" placeholder="¿Qué estas buscando?" aria-label="search">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              </form>
+            </div>
+            <div class="nav_list_container">
+              <ul>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./products.html">PRODUCTOS</a></li>
+                <li><a href="#">SOBRE NOSOTROS</a></li>
+              </ul>
+            </div>
+        </nav>
+
+        <div class="inicio_sesion_container">
+          <a href="./login.html" class="login-btn"><i class="fa-solid fa-user"></i>  Iniciar sesión</a>
+          <a href="" class="bag-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+
+      </header>
+
+      <main class="main product">
+
+        <section class="container">
+
+          <aside class="filters">
+              <div class="filter_section">
+                  <h2>Categorías</h2>
+                  <ul class="filter_options">
+                      <li><label><input type="checkbox" name="category" value="dragonballz">Dragon Ball Z</label></li>
+                      <li><label><input type="checkbox" name="category" value="harrypotter">Harry Potter</label></li>
+                      <li><label><input type="checkbox" name="category" value="starwars">Star Wars</label></li>
+                      <li><label><input type="checkbox" name="category" value="pokemon">Pokémon</label></li>
+                  </ul>
+              </div>
+          </aside>
+
+          <section class="products">
+
+              <article class="product">
+                <img src="./multimedia/harry-potter/harry-1.webp" alt="Harry Potter">
+                <h3>Funko pop Harry Potter</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/harry-potter/hermione-1.webp" alt="Hermione">
+                <h3>Funko pop Hermione</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/harry-potter/luna-1.webp" alt="Luna">
+                <h3>Funko pop Luna</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/harry-potter/snape-patronus-1.webp" alt="Snape patronus">
+                <h3>Funko pop Snape patronus</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/pokemon/charmander-1.webp" alt="Charmander">
+                <h3>Funko pop Charmander</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/pokemon/dragonite-1.webp" alt="Dragonite">
+                <h3>Funko pop Dragonite</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/pokemon/pidgeotto-1.webp" alt="Pidgeotto">
+                <h3>Funko pop Pidgeotto</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/pokemon/pikachu-1.webp" alt="Pikachu">
+                <h3>Funko pop Pikachu</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/pokemon/vulpix-1.webp" alt="Vulpix">
+                <h3>Funko pop Vulpix</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/star-wars/baby-yoda-1.webp" alt="Baby Yoda">
+                <h3>Funko pop Baby Yoda</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/star-wars/bobbafeth-1.webp" alt="Bobbafeth">
+                <h3>Funko pop Bobbafeth</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/star-wars/luke-1.webp" alt="Luke">
+                <h3>Funko pop Luke</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/star-wars/trooper-1.webp" alt="Trooper">
+                <h3>Funko pop Trooper</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/dragon-ball-z/goku-ssj-2.png" alt="Goku">
+                <h3>Funko pop Goku</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img class="majinbuu" src="./multimedia/dragon-ball-z/majin-buu.png" alt="Majin Buu">
+                <h3>Funko pop Majin Buu</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+              <article class="product">
+                <img src="./multimedia/dragon-ball-z/videl.png" alt="Videl">
+                <h3>Funko pop Videl</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+              </article>
+
+          </section>
+
+        </section>
+
+      </main>
+
+        <footer class="footercontent" role="contentinfo">
+
+          <div class="categorias">
+            <div>
+              <h4>Categorías</h4>
+            </div>
+            <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./products.html">Productos</a></li>
+              <li><a href="">Sobre nosotros</a></li>
+            </ul>
+          </div>
+          <div class="contactos">
+          <div>
+              <h4>Contactános</h4>
+          </div>
+            <ul>
+              <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <li> <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+          </div>
+          <div class="marca_footer_container">
+            <a href="./index.html">
+              <img src="/multimedia/branding/logoBlack.svg" alt="Logo PlanetFunko" />
+            <h1>PlanetFunko</h1>
+            </a>
+          </div>
+            
+        </footer>
+
+        <div class="footer2">
+          <p>Defensa de las y los consumidores. Para reclamos <a href="https://autogestion.produccion.gob.ar/consumidores" target="_blank">ingresa acá.</a> / <a href="./form.html">botón de arrepentimiento</a></p>
+        </div>
+
+   </div>
+  </body>
+</html>
