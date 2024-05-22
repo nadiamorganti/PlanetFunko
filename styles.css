@@ -432,10 +432,6 @@ div .mitad2 h1{
     border-radius: 8px;
     text-decoration: none;
 }
-
-/*.mitad3{
-
-}*/
 .mitad3 input{
     border: 1px solid black ;
     width: 80%;
@@ -679,3 +675,9 @@ div .mitad2 h1{
 	line-height: 1.5;
 	font-weight: 300;
 }
+
+
+
+
+/* -------- QUERY-------- */
+
