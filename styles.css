@@ -670,6 +670,10 @@ div .mitad2 h1{
     height: auto;
 }
 
+.product.mj img{
+    height: 150px;
+}
+
 .product .majinbuu{
     height: 139px;
 }
