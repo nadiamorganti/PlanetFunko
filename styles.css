@@ -450,11 +450,11 @@ div .mitad2 h1{
 }
 
 .mitad1 .loginbtn{
-    width: 40%;
+    width: 50%;
     margin-top: 60px;
-    margin: 50px  auto;
+    margin: 50px auto;
     margin-bottom: 0px;
-    padding: 8px;
+    padding: 8px 0px;
     display: flex;
     justify-content: center;
     color: #ffffff;
@@ -499,11 +499,11 @@ div .mitad2 h1{
 }
 
 .mitad3 .loginbtn{
-    width: 40%;
+    width: 50%;
     margin-top: 60px;
     margin: 20px auto;
     margin-bottom: 0px;
-    padding: 8px;
+    padding: 8px 0px;
     display: flex;
     justify-content: center;
     color: #ffffff;
